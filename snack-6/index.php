@@ -41,12 +41,27 @@ Stampiamo il nostro array mettendo gli insegnanti in un rettangolo grigio e i PM
     <?php 
         //£ prendo le chiavi dell'array associativo
         $Keys = array_keys($db);
+        var_dump($Keys);
     ?>
-    <?php  if ($Keys["teachers"]) { ?>
-        <div class="green"> <?php echo $Keys ?> </div>
-    <?php }else{  ?>
-    <div class="gray"><?php echo $Keys ?>
-    <?php }  ?>
+        <?php  for ($i=0; $i < count($Keys) ; $i++) { ?>
+                <div class="<?php if ($Keys[$i] == 'teachers') { echo 'green'; } else { echo 'gray'; } ?>">
+                    <ol>
+                        u<?php for ($index=0; $index < count($db[$Keys[$i]]) ; $index++) { ?>
+                        <li> 
+                            <?php echo $db[$Keys[$i]][$index]["name"] . " " . $db[$Keys[$i]][$index]["lastname"];}  ?> 
+                        </li>
+                    </ol> 
+                </div>
+        <?php }  ?>
+        
+    <!-- 
+    <div class="green"> <?php for ($index=0; $index < count($db["teachers"]) ; $index++) { 
+        echo $db["teachers"][$index]["name"] . " " . $db["teachers"][$index]["lastname"] ;
+    }  ?> </div>
+    <div class="gray"><?php for ($index=0; $index < count($db["pm"]) ; $index++) { 
+        echo $db["pm"][$index]["name"] . " " . $db["pm"][$index]["lastname"] ;
+    }  ?> </div> 
+    -->
 
 </body>
 </html>
