@@ -25,10 +25,10 @@ Passare come parametri GET name, mail e age e verificare
         Accesso email:
     </h1>
     <p>
-        //£ creo una variabile tipo _get (ovvero tramite url del sito)
+        <!-- //£ creo una variabile tipo _get (ovvero tramite url del sito) -->
         <?php
         $check= $_GET;
-        //$ stampo la lista
+        //$ stampo la lista  
         var_dump($check);
         //! strlen() per dare la lunghezza della stringa
         //! strpos() per vedere se ci sono dei caratteri uguali e quelli scritti subito dopo

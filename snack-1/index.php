@@ -52,7 +52,7 @@ Olimpia Milano - Cantù | 55-60
             <li> <?php echo $array[$i]["home"] . "-" . $array[$i]["guest"] . "|". $array[$i]["pointshome"] . "-" . $array[$i]["pointsguest"]; ?> </li>
         <?php } ?>
     </ul>
-    // £ count() nel php è come il .length nel js
-    //$ bisogna sempre ricordarsi del dollaro prima di una variabile
+    <!-- // £ count() nel php è come il .length nel js -->
+    <!-- //$ bisogna sempre ricordarsi del dollaro prima di una variabile -->
 </body>
 </html>

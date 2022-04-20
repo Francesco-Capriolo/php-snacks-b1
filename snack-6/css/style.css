@@ -1,0 +1,13 @@
+div {
+    margin: auto;
+    width: 50%;
+    height: 100px;
+}
+
+.gree {
+    background-color: green;
+}
+
+.gray {
+    background-color: gray;
+}

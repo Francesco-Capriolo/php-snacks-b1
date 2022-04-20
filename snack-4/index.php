@@ -1,12 +1,17 @@
 <?php 
 /* Creare un array con 15 numeri casuali, 
 tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta */
+    //$creo delle variabili da 0 a 100 fino al massimo di 15
     $min=0;
     $max=100;
     $int=15;
+    //£ iniziallizzo una variabile vuota
     $newArray= [];
+    //!faccio un while finchè non arrivo a 15
         while(count($newArray) < $int){
+            //!creo dei numeri randomici con rand()
             $number = rand($min,$max);
+            //! se non ci sta il numero che si è appena creato allora lo inserisco nell'array
             if (!in_array($number,$newArray)) {
                 $newArray[]= $number;
             }

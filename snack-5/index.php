@@ -16,6 +16,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+        <h4>
+            <!-- faccio vedere il paragrafo -->
+            <?php echo $paraghap;  ?>
+        </h4>
+        <!-- //! con explode() divido il praragrafo ogni volta che ci sta il punto -->
+        <?php $pieces = explode(".", $paraghap);  ?>
+
+        <ol>
+            <!-- //£  ciclo for sul ogni sottostringa creata -->
+            <?php for ($i=0; $i < count($pieces) ; $i++) { ?>
+            <li>
+                <?php echo $pieces[$i];  ?>
+            </li>
+            <?php } ?>
+        </ol>
+    </div>
 </body>
 </html>
